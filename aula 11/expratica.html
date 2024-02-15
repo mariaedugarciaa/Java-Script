@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidadania </title>
+</head>
+<body>
+    <h1>Brasileiros e Estrangeiros </h1>
+    <input type="text" id="txtname">
+    <input type="button" value="Verificar"
+    onclick="analisar()">
+    <div id="cidadania ">
+
+    </div>
+    <script>
+        function analisar(){
+            var pais=document.getElementById('txtname')
+            var cidadania = document.getElementById('cidadania ')
+            var nasc=String(pais.value)
+            cidadania.innerHTML=`Sua cidadania é ${nasc}`
+            if (nasc=='Brasil'){
+    console.log('Você é Brasileiro')
+            }else{
+    console.log('Você é Estrangeiro')}
+
+        }
+    </script>
+    
+</body>
+</html>
